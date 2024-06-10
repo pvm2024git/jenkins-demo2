@@ -5,7 +5,6 @@ pipeline {
             steps {
                 bat '''
                 mkdir testingPipeline
-                echo "Some Things" > testingPipeline\file.txt
                 '''
             }
         }
