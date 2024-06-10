@@ -4,7 +4,8 @@ pipeline {
         stage('Make Folders and files'){
             steps {
                 bat '''
-                mkdir testingPipeline
+                echo "stage 1"
+                dir
                 '''
             }
         }
@@ -12,7 +13,7 @@ pipeline {
             steps {
                 bat '''
                 dir
-                type testingPipeline\text.txt
+                echo "stage 2"
                 '''
             }
         }
