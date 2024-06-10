@@ -17,5 +17,13 @@ pipeline {
                 '''
             }
         }
+        stage ('Run') {
+            steps {
+                bat '''
+                script.bat
+                echo "stage 3"
+                '''
+            }
+        }
     }
 }
